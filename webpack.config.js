@@ -2,7 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 const config = {
-  entry: './src/index.ts',
+  entry: './src/www.ts',
   module: {
     rules: [
       {
@@ -20,7 +20,12 @@ const config = {
     path: path.resolve(__dirname, 'www'),
   },
   plugins: [new HtmlWebpackPlugin()],
-  mode: 'production'
+  mode: 'production',
+  devServer: {
+    contentBase: path.join(__dirname, 'www'),
+    compress: true,
+    port: 3000
+  }
 };
 
 module.exports = config

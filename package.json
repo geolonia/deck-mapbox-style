@@ -20,6 +20,8 @@
   },
   "scripts": {
     "build:pkg": "tsc",
-    "build:www": "webpack"
+    "build:www": "webpack",
+    "build": "npm run build:pkg && npm run build:www",
+    "start": "webpack serve --open"
   }
 }
