@@ -3,11 +3,10 @@
     "outDir": "./dist/",
     "noImplicitAny": true,
     "module": "es6",
-    "target": "es5",
+    "target": "esnext",
     "jsx": "react",
-    "allowJs": false,
+    "allowJs": true,
     "types": []
   },
-  "include": ["src/**/*"],
-  "exclude": ["src/www.ts"]
+  "include": ["src/**/*"]
 }

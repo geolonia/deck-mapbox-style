@@ -122,4 +122,4 @@ dist
 package-lock.json
 
 # project specific
-www
+docs

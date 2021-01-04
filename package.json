@@ -8,6 +8,10 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
+    "@danmarshall/deckgl-typings": "^4.4.0",
+    "@deck.gl/core": "^8.3.12",
+    "@deck.gl/geo-layers": "^8.3.12",
+    "@deck.gl/layers": "^8.3.12",
     "@types/html-webpack-plugin": "^3.2.4",
     "ts-loader": "^8.0.13",
     "typescript": "^4.1.3",
@@ -16,12 +20,13 @@
     "webpack-dev-server": "^3.11.1"
   },
   "dependencies": {
+    "@deck.gl/mesh-layers": "^8.3.12",
     "html-webpack-plugin": "^4.5.1"
   },
   "scripts": {
     "build:pkg": "tsc",
-    "build:www": "webpack",
-    "build": "npm run build:pkg && npm run build:www",
+    "build:docs": "webpack",
+    "build": "npm run build:pkg && npm run build:docs",
     "start": "webpack serve --open"
   }
 }
