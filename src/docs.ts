@@ -2,7 +2,7 @@
 import { Deck } from '@deck.gl/core';
 import { MVTStyleLater } from './index'
 
-const sourcesURL = 'https://api.geolonia.com/dev/sources?key=YOUR-API-KEY'
+const sourcesURL = 'https://tileserver-dev.geolonia.com/v1/tiles.json?key=YOUR-API-KEY'
 const styleURL = 'https://cdn.geolonia.com/style/geolonia/basic/en.json'
 
 const main = async () => {
